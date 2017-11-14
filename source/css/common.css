@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+
+/******************************************************
+
+ body
+ 
+******************************************************/
+
+html {
+	font-size: 10px;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	font-family:"ヒラギノ角ゴPro W3","Hiragino Kaku Gothic Pro", Osaka,"Meiryo","メイリオ","MS Pゴシック",Arial, Helvetica, Verdana,sans-serif;
+	font-size: 100%;
+	line-height: 1.5;
+	color:#000;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+	color:#000;
+	text-decoration: none;
+}
+
+.rollover:hover{
+	opacity:0.8;
+	filter: alpha(opacity=80);
+	-ms-filter: "alpha(opacity=80)";
+	-moz-opacity:0.8;
+	-khtml-opacity: 0.8;
+}
+
+img{
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+.inner{
+	max-width: 980px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
+.pc{
+	display:none;
+}
+
+@media screen and (min-width:480px) {
+
+	.pc{
+		display:block;
+	}
+	.sp{
+		display:none;
+	}
+
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+}
+
+@media screen and (min-width:1024px) {
+}
+
+
+/******************************************************
+
+ header
+ 
+******************************************************/
+
+
+
+
+/******************************************************
+
+ nav
+ 
+******************************************************/
+
+
+
+
+/******************************************************
+
+ footer
+ 
+******************************************************/
+
+
+
+
+/******************************************************
+
+ 中ページ共通
+ 
+******************************************************/
+
+
