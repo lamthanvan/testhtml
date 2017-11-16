@@ -1,0 +1,1060 @@
+@charset "utf-8";
+
+
+/******************************************************
+ body
+******************************************************/
+
+html {
+    font-size: 10px;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    font-family: "ヒラギノ角ゴPro W3", "Hiragino Kaku Gothic Pro", Osaka, "Meiryo", "メイリオ", "MS Pゴシック", Arial, Helvetica, Verdana, sans-serif;
+    font-size: 100%;
+    line-height: 1.5;
+    color: #000;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #000;
+    text-decoration: none;
+}
+
+.rollover:hover {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    -ms-filter: "alpha(opacity=80)";
+    -moz-opacity: 0.8;
+    -khtml-opacity: 0.8;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.inner {
+    max-width: 980px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+[class*="visible-"] {
+    display: none;
+}
+
+.tel {
+    border-left: 1px solid #e3e0de;
+    display: block;
+    background-image: url(../img/telephone.png);
+    background-repeat: no-repeat;
+    background-position: 5px 8px;
+}
+.contact-number{
+	cursor: pointer;
+}
+.revervation {
+    display: block;
+    background-color: #ffb400;
+    font-size: 10pt;
+    padding-top: 3px;
+}
+
+.revervation a {
+    color: #fff;
+}
+#revSm{
+	width: 60px;
+	height: inherit;
+	background-color:#ffb400;
+	padding:5px 10px;
+}
+#revSm{
+
+}
+.rounded {
+    border-radius: 5px;
+}
+
+.rounded-circle {
+    border-radius: 50%;
+}
+
+.clear-fix {
+    clear: both;
+    width: 100%;
+}
+
+a.view {
+    color: #97b96d;
+    font-size: 11pt;
+}
+
+.view img {
+    height: 20px;
+}
+
+
+
+/*****************************
+   slider
+*****************************/
+
+.slider-container {
+    position: relative;
+    /*padding-top: 20px;*/
+    display: block;
+}
+
+.slider {
+    overflow: hidden;
+    background-color: #fff;
+    display: inline-block;
+    margin-top: 30px;
+    position: relative;
+    z-index: 400;
+}
+
+.slider .frame {
+    display: block;
+    position: relative;
+    z-index: 400;
+    overflow: hidden;
+}
+
+.slider .frame img {
+    width: inherit;
+    height: inherit;
+}
+
+.slider .slide-item {
+    position: absolute;
+    top: 0;
+    z-index: 300;
+}
+
+@media screen and (min-width: 769px) {
+    .pc {
+        display: block;
+    }
+    .sp {
+        display: none;
+    }
+    
+    /******************************************************
+ header
+*****************************************************/
+    .header .container {
+        padding: 0;
+    }
+    .logo-container {
+        width: 100%;
+        height: auto;
+        padding: 20px 0;
+        position: relative;
+    }
+    /************************************
+    * better display for logo when screen width is small, make sure image not too big or display over header 
+   **************************************/
+    .logo {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+    .logo img {
+        /*width: 200px;*/
+        height: 100px;
+        margin: 0 auto;
+    }
+    .header .contact-container {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding-top: 40px;
+    }
+    .contact-box {
+        width: 330px;
+    }
+    .contact-box .text-content {
+        font-size: 9pt;
+        color: #bdbea9;
+    }
+    .contact-box {
+        display: inline-block;
+    }
+    .contact {
+        padding-top: 10px;
+        height: 30px;
+    }
+    .contact-number {
+        position: relative;
+        height: 100%;
+    }
+    .contact-number img {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .revervation {
+
+        padding: 5px;
+        height: 30px;
+        text-align: center;
+        display: table;
+    }
+    .revervation a {
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .revervation a img {
+        height: 32px;
+        padding:0 5px 5px;
+    }
+    .revervation.original {
+        background-position: 20px 5px;
+        background-size: 20px;
+        margin-left: 10px;
+        width: 170px;
+    }
+    /******************************************************
+	*nav
+	******************************************************/
+    .header .nav-container {
+        position: relative;
+        width: 100%;
+        height: auto;
+        z-index: 500;
+        /*display: block;*/
+    }
+    .header .nav {
+        width: inherit;
+        display: block;
+    }
+    .nav img {
+        height: 60px;
+        width: auto;
+        display: block;
+    }
+    .nav ul {
+        width: 100%;
+        display: inline-block;
+    }
+    .nav ul li {
+        width: 14.28%;
+        height: 70px;
+        padding: 5px 0 5px 0;
+        float: left;
+        text-align: center;
+        display: block;
+    }
+    .nav ul li.active {
+        border-radius: 5px;
+        background-color: #74a23e;
+    }
+    .nav ul li a {
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        padding: 0 10px 0 10px;
+        cursor: pointer;
+    }
+    .nav li img {
+        margin: 0 auto;
+    }
+    .nav ul li a:hover {
+        cursor: pointer;
+    }
+/****************************************************
+
+ 中ページ共通
+ 
+*****************************************************/
+    #mainContent {
+        margin: 0 auto;
+    }
+    .content-container {
+        position: relative;
+        top: -90px;
+    }
+    .content-container .content {
+        padding-bottom: 10px;
+    }
+    .bg-cover {
+        position: relative;
+        top: -10px;
+        background-image: url('../img/bg_partern.png');
+        background-size: contain;
+        width: 100%;
+        height: auto;
+        z-index: 600;
+        display: inline-block;
+    }
+    .top-art {
+        position: relative;
+        z-index: 500;
+    }
+    .top-art img {
+        width: 100%;
+        height: auto;
+    }
+    /******************
+    center banner 
+    ******************/
+    .banner {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        border-bottom: 1px solid #b5ab9f;
+    }
+    .banner .nurse {
+        position: absolute;
+        bottom: 0;
+    }
+    img.nurse-girl {
+        position: relative;
+        height: 200px;
+        left: 91px;
+    }
+    .banner .slogan {
+        padding-bottom: 20px;
+    }
+    .banner .slogan {
+        text-align: center;
+    }
+    .banner .slogan h1 {
+        font-size: 18pt;
+        color: #746457;
+    }
+    .banner .slogan img {
+        width: 30px;
+        margin: 10px 5px;
+    }
+    /**********************
+	post
+	**********************/
+    .post-box {
+        display: inline-block;
+        padding-bottom: 20px;
+    }
+    .post .thumbnail {
+        width: 30%;
+        height: 100%;
+        overflow: hidden;
+    }
+    .post {
+        width: 50%;
+        display: block;
+        margin: 10px 0;
+        padding: 10px;
+        float: left;
+    }
+    .post h3 {
+        font-size: 16pt;
+        color: #97b96d
+    }
+    .post .body {
+        padding: 10px 0;
+    }
+    .post .body-content {
+        width: 70%;
+        height: 100%;
+        padding: 5px 0 0 10px;
+        margin: 0;
+    }
+    .post .text-content {
+        font-size: 12pt;
+        /*letter-spacing: -1px;*/
+        word-wrap: break-word;
+        word-break: break-all;
+        text-align: justify;
+    }
+    /***********************
+	news area
+    ***********************/
+    .news-box {
+        width: 100%;
+        padding: 60px 0;
+    }
+    .news-box .news {
+        width: 50%;
+        float: left;
+    }
+    .news .news-header {
+        border-bottom: 1px solid #b8b2ac;
+        padding: 10px 0;
+    }
+    .news .news-header h3 img {
+        height: 35px;
+    }
+    .news .news-header h3 {
+        font-size: 16pt;
+        color: #97b96d;
+        display: inline-block;
+    }
+    .news-content {
+        font-size: 10pt;
+    }
+    .news-content .publish-date img {
+        padding-left: 5px;
+        height: 25px;
+    }
+    .news-content .publish-date,
+    .title {
+        float: left;
+        overflow: hidden;
+    }
+    .news-content .publish-date {
+        width: 40%;
+    }
+    .news-content .title a {
+        width: 60%;
+        color: #74a23e;
+    }
+    .news-content ul li {
+        width: 100%;
+        padding: 5px 0;
+        border-bottom: 1px dotted #b9b1ab;
+        display: inline-block;
+    }
+    .news-content ul li:last-child {
+        border-bottom: none;
+    }
+    /*************************
+    news > ads
+    **************************/
+    .ads-box {
+        width: 50%;
+        padding-left: 20px;
+        overflow: hidden;
+    }
+    .ads-box .ads-container {
+        width: 100%;
+        margin-top: 10%;
+    }
+    .ads-box .ads {
+        position: relative;
+        padding: 0;
+        text-align: center;
+        display: inline-block;
+        border: 2px solid #f6f4e8;
+        border-radius: 5px;
+    }
+    .ads .ads-content {
+        width: 50%;
+    }
+    .ads-content .center {
+        width: 100%;
+        position: absolute;
+        top: 35%;
+    }
+    .ads-content h3 {
+        font-size: 16pt;
+    }
+    .ads-content a,
+    h3 {
+        color: #74a23e;
+    }
+    /*******************
+	infomation area
+    *******************/
+    .info-box {
+        padding: 20px 0;
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+    }
+    .info-box .contact-box,
+    .time-shift {
+        width: 50%;
+        float: left;
+    }
+    .info-box .contact-box .contact-container {
+        padding: 10px 0;
+    }
+    .info-box .contact-container {
+        display: inline-block;
+    }
+    .info-box .contact-box p {
+        color: #746457;
+    }
+    .info-box .contact-box .logo {
+        padding: 10px 0;
+    }
+    .info-box .contact-box .logo img {
+        float: left;
+        width: 290px;
+        height: auto;
+    }
+    .info-box .revervation{
+		max-width: 130px;
+    }
+    .time-shift {
+        padding: 10px 0;
+    }
+    .time-shift .header {
+        width: 100%;
+        padding: 10px 0;
+    }
+    .time-shift .header h3 {
+        font-size: 16pt;
+        color: #746457;
+    }
+    .time-shift .header img {
+        height: 35px;
+        /*width: 44px;*/
+    }
+    .contact {
+        padding: 5px 0;
+        display: table;
+        width: 100%;
+    }
+    .contact-number {
+        width: 46%;
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+    }
+    /********************
+	google map area
+    *********************/
+    .map {
+        padding: 10px 0;
+    }
+    .map img {
+        width: 100%;
+        height: 100%;
+    }
+    /******************************************************
+
+ footer
+ 
+*****************************************************/
+    .footer {
+        padding-top: 100px;
+        margin-top: 0px;
+        background-image: url('../img/bg_footer.png');
+        background-size: cover;
+        text-align: center;
+        width: 100%;
+    }
+    .footer .site-map {
+        width: 100%;
+        padding: 10px 0;
+    }
+    .site-map ul {
+        display: inline-block;
+        position: relative;
+    }
+    .site-map ul li {
+        width: auto;
+        padding: 0 10px;
+        float: left;
+        text-align: center;
+        display: block;
+        border-right: 1px solid #74a23e;
+    }
+    .site-map ul li:last-child {
+        border-right: none;
+    }
+    .site-map a {
+        padding: auto 10px;
+        font-size: 10pt;
+        color: #74a23e;
+    }
+    .footer .logo {
+        padding: 10px 0;
+        width: 100%
+    }
+    .footer .logo img {
+        width: 208px;
+        height: auto;
+    }
+    .footer .copy {
+        font-size: 10pt;
+        background-color: #74a23e;
+        width: 100%;
+        padding: 20px 5px;
+        color: #fff;
+    }
+    .back-top-container {
+        width: 100%;
+        position: relative;
+    }
+    .back-top-box {
+        position: relative;
+    }
+    #btn-back-top {
+        position: fixed;
+        bottom: 60px;
+        right: 58px;
+        width: 100px;
+        z-index: 1000;
+    }
+    .hide {
+        display: none;
+    }
+    .show {
+        display: block;
+    }
+}
+
+
+
+/*pc, notebook*/
+
+@media screen and (max-width:992px) {
+    .container {
+        max-width: 800px;
+    }
+    #btn-back-top {
+        position: fixed;
+        bottom: 60px;
+        right: 40px;
+        width: 70px;
+        z-index: 1000;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+
+
+/*Mobile tablet*/
+
+@media screen and (min-width:300px) and (max-width: 768px) {
+    .pc {
+        display: none;
+    }
+    .sp {
+        display: block;
+    }
+ /******************************************************
+ header
+******************************************************/
+    .header .container {
+        padding: 0;
+    }
+    .header .logo-container {
+        width: 100%;
+        height: 60px;
+        padding-left: 10px;
+        border-bottom: 1px solid #e3e0de;
+    }
+    .header .header-responsive {
+        height: 60px;
+    }
+    /*
+    * better display for logo when screen width is small, make sure image not too big or display over header 
+    */
+    .header .logo {
+        position: absolute;
+        left: 40px;
+    }
+    .header .logo img {
+        width: auto;
+        height: 60px;
+        padding: 3px 0;
+    }
+    .tel {
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+    }
+    .revervation {
+
+        max-width: 40%;
+        min-width: 100px;
+        height: 40px;
+        text-align: center;
+        display: table;
+    }
+    .revervation a {
+        width: 170px;
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .revervation a img {
+        height: 32px;
+        padding: 0 5px 5px;
+    }
+    .revervation.short {
+       
+        height: inherit;
+    }
+    .revervation.short img {
+        height: 70%;
+    }
+    .revervation.original {
+        background-position: 20px 5px;
+        background-size: 20px;
+        margin-left: 10px;
+    }
+    /******************************************************
+	*nav
+	******************************************************/
+    #switchContainer {
+        height: inherit;
+        width: 60px;
+    }
+    #responNavbar {
+        width: 100%;
+    }
+    #responNavbar img {
+        height: 60px;
+        width: auto;
+    }
+    .responsive-nav {
+        position: absolute;
+        display: block;
+        max-height: 0;
+        -webkit-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+        transition: 1s;
+        overflow: hidden;
+        z-index: 1000;
+        background-color: #fff;
+    }
+    .resp-active {
+        max-height: 100%;
+    }
+    #responNavbar ul {
+        position: relative;
+        top: 0;
+    }
+    #responNavbar ul li {
+        border-bottom: 1px solid #e3e0de;
+        width: 50%;
+        height: 70px;
+        padding: 5px 0 5px 0;
+        float: left;
+        text-align: center;
+        display: block;
+    }
+    #responNavbar ul li:nth-child(odd) {
+        border-right: 1px solid #e3e0de;
+    }
+    #responNavbar ul li.active {
+        background-color: #74a23e;
+    }
+    #responNavbar ul li a {
+        width: 100%;
+        height: 100%;
+        display: block;
+        padding: 0 10px 0 10px;
+    }
+    /*****************************
+	*Hamburger button navigation
+	******************************/
+    #switchContainer {
+        background-color: #74a23e;
+        padding-top: 5px;
+    }
+    .hamburger .line {
+        width: 40px;
+        height: 5px;
+        background-color: #fff;
+        display: block;
+        margin: 8px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+    .hamburger:hover {
+        cursor: pointer;
+    }
+    #btnSwitch.is-active .line:nth-child(2) {
+        opacity: 0;
+    }
+    #btnSwitch.is-active .line:nth-child(1) {
+        -webkit-transform: translateY(13px) rotate(-45deg);
+        -ms-transform: translateY(13px) rotate(-45deg);
+        -o-transform: translateY(13px) rotate(-45deg);
+        transform: translateY(13px) rotate(-45deg);
+    }
+    #btnSwitch.is-active .line:nth-child(3) {
+        -webkit-transform: translateY(-13px) rotate(45deg);
+        -ms-transform: translateY(-13px) rotate(45deg);
+        -o-transform: translateY(-13px) rotate(45deg);
+        transform: translateY(-13px) rotate(45deg);
+    }
+    /******************************************************
+
+ 中ページ共通
+ 
+*****************************************************/
+    .content-container {
+        position: relative;
+        top: -50px;
+    }
+    .content-container .content {
+        padding-bottom: 10px;
+    }
+    .bg-cover {
+        position: relative;
+        top: -10px;
+        background-image: url('../img/bg_partern.png');
+        background-size: contain;
+        width: 100%;
+        height: auto;
+        z-index: 600;
+        display: inline-block;
+    }
+    .top-art {
+        position: relative;
+        z-index: 500;
+    }
+    .top-art img {
+        width: 100%;
+        height: auto;
+    }
+    /**************************
+    center slogan 
+    ***************************/
+    .slogan {
+        text-align: center;
+        border-bottom: 1px solid #b5ab9f;
+    }
+    .slogan h1 {
+        font-size: 18pt;
+        color: #746457;
+    }
+    .slogan img {
+        width: 30px;
+        margin: 10px 5px;
+    }
+    .post {
+        width: 100%;
+        display: block;
+        margin: 10px 0;
+        float: left;
+    }
+    .post h3 {
+        font-size: 16pt;
+        color: #97b96d
+    }
+    .post .text-content {
+        font-size: 12pt;
+        word-wrap: break-word;
+        word-break: break-all;
+        text-align: justify;
+    }
+    /*************************
+	news area
+    **************************/
+    .news-box {
+        width: 100%;
+        padding: 30px 0;
+    }
+    .news .news-header h3 {
+        font-size: 16pt;
+        color: #97b96d;
+        display: inline-block;
+    }
+    .news-content .title a {
+        width: 60%;
+        color: #74a23e;
+    }
+    .ads-box {
+        width: 100%;
+        padding-left: 20px;
+        overflow: hidden;
+    }
+    .ads-box .ads-container {
+        width: 100%;
+        margin-top: 10%;
+    }
+    .ads-box .ads {
+        position: relative;
+        padding: 0;
+        text-align: center;
+        display: inline-block;
+        border: 2px solid #f6f4e8;
+        border-radius: 5px;
+    }
+    .ads .ads-content {
+        width: 50%;
+    }
+    .ads-content .center {
+        width: 100%;
+        position: absolute;
+        top: 35%;
+    }
+    .ads-content h3 {
+        font-size: 16pt;
+    }
+    .ads-content a,
+    h3 {
+        color: #74a23e;
+    }
+    .text_over_image {}
+    /*************************
+	thumbnail
+	**************************/
+    .thumbnail {
+        width: 30%;
+        height: 100%;
+        overflow: hidden;
+    }
+    .body-content {
+        width: 70%;
+        padding: 5px 0 0 10px;
+        margin: 0;
+    }
+    /**************************
+	infomation area
+    **************************/
+    .news .news-container {
+        padding: 20px 0;
+        width: 100%;
+        display: inline-block;
+        background-color: #fff;
+    }
+    .news .news-header {
+        border-bottom: 1px solid #b8b2ac;
+        padding: 10px 0;
+        width: 100%
+    }
+    .news .news-header img {
+        height: 35px;
+    }
+    .news .news-header h3 {
+        font-size: 16pt;
+        color: #97b96d
+    }
+    .news-content {
+        font-size: 10pt;
+    }
+    .news-content .publish-date img {
+        padding-left: 5px;
+        height: 25px;
+    }
+    .news-content .publish-date,
+    .title {
+        padding: 5px 0;
+        width: auto;
+    }
+    .news-content ul li {
+        padding: 10px 0;
+        border-bottom: 1px dotted #b9b1ab;
+    }
+    .news-content ul li:last-child {
+        border-bottom: none;
+    }
+    .info-box {
+        padding: 20px 0;
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        font-size: 18pt;
+        color: #746457;
+    }
+    .info-box .contact-box,
+    .time-shift {
+        width: 100%;
+        float: left;
+        padding: 10px 0;
+    }
+    .contact-box .logo .contact,
+    .contact-number {
+        float: left;
+        width: 45%;
+        max-width: 250px;
+    }
+    .contact-box .logo,
+    .contact,
+    .adress {
+        width: 100%;
+        padding: 10px 0;
+    }
+    .info-box .contact-box .revervation {
+        width: 45%;
+        max-width: 170px;
+        margin-left: 20px;
+        display: table;
+        float: left;
+    }
+    .time-shift .header img {
+        height: 35px;
+    }
+    /**************************
+	google map area
+    **************************/
+    .map {
+        padding: 10px 0;
+    }
+    .map img {
+        width: 100%;
+        height: 100%;
+    }
+    /******************************************************
+ 	footer
+	******************************************************/
+    .footer {
+        padding-top: 200px;
+        margin-top: 0px;
+        background-image: url('../img/bg_footer.png');
+        background-size: cover;
+        text-align: center;
+        width: 100%;
+    }
+    .footer .logo {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        padding: 10px 0;
+    }
+    .footer .logo img {
+        width: 208px;
+        height: auto;
+    }
+    .footer .copy {
+        position: absolute;
+        border-bottom: 0;
+        font-size: 10pt;
+        background-color: #74a23e;
+        width: 100%;
+        padding: 5px 5px;
+        color: #fff;
+    }
+}
